@@ -1,4 +1,4 @@
-import { FaArrowDown, FaFileDownload, FaLinkedin } from "react-icons/fa";
+import { FaArrowDown, FaFileDownload, FaFilePdf, FaLinkedin } from "react-icons/fa";
 
 function Comienzo() {
   return (
@@ -34,6 +34,21 @@ function Comienzo() {
             >
               <FaFileDownload /> Ver mi CV
             </a>
+          </div>
+          <div className="formacion-ia-portada">
+            <p>Formación continua en inteligencia artificial</p>
+            <span>
+              Estudio y aplico IA para crear soluciones más útiles, automatizar
+              procesos y acompañar mejores decisiones.
+            </span>
+            <div className="certificados-ia-portada">
+              <a href="/Documentos/CertificadoCursoIA.pdf" target="_blank" rel="noopener noreferrer">
+                <FaFilePdf /> Curso de IA
+              </a>
+              <a href="/Documentos/CertificadoDesarrolloIA.pdf" target="_blank" rel="noopener noreferrer">
+                <FaFilePdf /> Desarrollo con IA
+              </a>
+            </div>
           </div>
         </div>
         <div className="marcoFotoPerfil">

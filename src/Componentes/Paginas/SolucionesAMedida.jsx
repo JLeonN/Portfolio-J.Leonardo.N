@@ -3,6 +3,7 @@ import {
   FaArrowRight,
   FaDesktop,
   FaEnvelope,
+  FaFilePdf,
   FaGlobe,
   FaLightbulb,
   FaLinkedin,
@@ -110,6 +111,24 @@ function SolucionesAMedida() {
               <p>{descripcion}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="seccion-soluciones-medida formacion-ia-soluciones-medida">
+        <p className="etiqueta-soluciones-medida">Formación profesional</p>
+        <h2>Inteligencia artificial aplicada con aprendizaje continuo.</h2>
+        <p>
+          Me formo y actualizo en inteligencia artificial para identificar
+          oportunidades de automatización y crear herramientas prácticas que
+          ayuden a cada negocio a trabajar mejor.
+        </p>
+        <div className="certificados-ia-soluciones-medida">
+          <a href="/Documentos/CertificadoCursoIA.pdf" target="_blank" rel="noopener noreferrer">
+            <FaFilePdf /> Curso de IA
+          </a>
+          <a href="/Documentos/CertificadoDesarrolloIA.pdf" target="_blank" rel="noopener noreferrer">
+            <FaFilePdf /> Desarrollo con IA
+          </a>
         </div>
       </section>
 

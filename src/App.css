@@ -1490,6 +1490,26 @@ body {
   color: var(--texto-soluciones);
   font-size: 1.18rem;
 }
+.formacion-ia-soluciones-medida {
+  border-top: 1px solid rgba(174, 207, 237, 0.1);
+}
+.formacion-ia-soluciones-medida > p:not(.etiqueta-soluciones-medida) {
+  max-width: 730px;
+  margin: 22px 0 0;
+  color: var(--texto-suave-soluciones);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.certificados-ia-soluciones-medida a {
+  border-color: rgba(174, 207, 237, 0.2);
+  color: var(--texto-soluciones);
+}
+.certificados-ia-soluciones-medida a:hover,
+.certificados-ia-soluciones-medida a:focus-visible {
+  border-color: var(--acento-soluciones);
+  color: var(--texto-soluciones);
+  background: rgba(55, 213, 180, 0.13);
+}
 .caso-bitacora-soluciones-medida {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
@@ -1840,6 +1860,56 @@ body {
 .botonSecundario:focus-visible {
   color: var(--textoPrincipal);
   background: rgba(110, 168, 255, 0.16);
+}
+.formacion-ia-portada {
+  max-width: 680px;
+  margin-top: 28px;
+  padding: 18px 20px;
+  border: 1px solid rgba(110, 168, 255, 0.28);
+  border-radius: 14px;
+  background: rgba(110, 168, 255, 0.07);
+}
+.formacion-ia-portada p {
+  margin: 0;
+  color: var(--textoPrincipal);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.formacion-ia-portada span {
+  display: block;
+  margin-top: 6px;
+  color: var(--textoSuave);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+.certificados-ia-portada,
+.certificados-ia-soluciones-medida {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+.certificados-ia-portada a,
+.certificados-ia-soluciones-medida a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border: 1px solid rgba(174, 207, 237, 0.25);
+  border-radius: 9px;
+  color: var(--textoPrincipal);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.certificados-ia-portada a:hover,
+.certificados-ia-portada a:focus-visible,
+.certificados-ia-soluciones-medida a:hover,
+.certificados-ia-soluciones-medida a:focus-visible {
+  color: var(--textoPrincipal);
+  border-color: var(--acentoPrincipal);
+  background: rgba(55, 213, 180, 0.12);
 }
 .marcoFotoPerfil {
   position: relative;
@@ -2193,6 +2263,8 @@ body {
   .accionesPortada { align-items: stretch; flex-direction: column; width: 100%; }
   .botonPrincipal,
   .botonSecundario { width: 100%; max-width: 100%; }
+  .certificados-ia-portada { flex-direction: column; }
+  .certificados-ia-portada a { justify-content: center; }
   .presentacionPortada h1 { font-size: clamp(2.9rem, 16vw, 4.3rem); }
   .marcoFotoPerfil { width: min(265px, 74vw); }
   .marcoFotoPerfil p { right: -14px; bottom: 8px; }
