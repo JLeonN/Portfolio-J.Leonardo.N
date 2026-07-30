@@ -1,9 +1,10 @@
 import { FaGithub, FaGooglePlay } from "react-icons/fa";
-import { TbWorld } from "react-icons/tb";
+import { TbRocket, TbWorld } from "react-icons/tb";
 
 const iconosAccion = {
   github: FaGithub,
   web: TbWorld,
+  landing: TbRocket,
   googlePlay: FaGooglePlay,
 };
 

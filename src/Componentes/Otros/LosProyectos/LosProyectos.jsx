@@ -9,6 +9,7 @@ const proyectos = [
     destacado: true,
     enlaces: [
       { tipo: "web", etiqueta: "Ver web", url: "https://jleonn.github.io/PrecioJusto/#/" },
+      { tipo: "landing", etiqueta: "Ver landing", url: "https://jleonn.github.io/PrecioJustoWeb/#/" },
       { tipo: "googlePlay", etiqueta: "Google Play", url: "https://play.google.com/store/apps/details?id=com.preciojusto.app" },
       { tipo: "github", etiqueta: "GitHub", url: "https://github.com/JLeonN/PrecioJusto" },
     ],
