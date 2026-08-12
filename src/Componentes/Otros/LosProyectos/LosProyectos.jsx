@@ -11,6 +11,8 @@ const proyectos = [
       { tipo: "web", etiqueta: "Ver web", url: "https://jleonn.github.io/PrecioJusto/#/" },
       { tipo: "landing", etiqueta: "Ver landing", url: "https://jleonn.github.io/PrecioJustoWeb/#/" },
       { tipo: "googlePlay", etiqueta: "Google Play", url: "https://play.google.com/store/apps/details?id=com.preciojusto.app" },
+      { tipo: "facebook", etiqueta: "Facebook", url: "https://www.facebook.com/profile.php?id=61590710220868" },
+      { tipo: "instagram", etiqueta: "Instagram", url: "https://www.instagram.com/preciojustoapp/" },
       { tipo: "github", etiqueta: "GitHub", url: "https://github.com/JLeonN/PrecioJusto" },
     ],
   },

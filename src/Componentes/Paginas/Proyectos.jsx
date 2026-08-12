@@ -1,4 +1,9 @@
-import { FaGithub, FaGooglePlay } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaGooglePlay,
+  FaInstagram,
+} from "react-icons/fa";
 import { TbRocket, TbWorld } from "react-icons/tb";
 
 const iconosAccion = {
@@ -6,6 +11,8 @@ const iconosAccion = {
   web: TbWorld,
   landing: TbRocket,
   googlePlay: FaGooglePlay,
+  facebook: FaFacebook,
+  instagram: FaInstagram,
 };
 
 function Proyectos({ proyecto }) {
