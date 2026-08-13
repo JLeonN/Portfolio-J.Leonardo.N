@@ -1295,7 +1295,7 @@ body {
   margin: 0 auto;
 }
 .acciones-soluciones-medida a,
-.enlace-bitacora-soluciones-medida,
+.enlace-caso-soluciones-medida,
 .acciones-contacto-soluciones-medida a {
   display: inline-flex;
   align-items: center;
@@ -1362,7 +1362,7 @@ body {
   color: var(--texto-soluciones);
 }
 .acciones-soluciones-medida a:hover,
-.enlace-bitacora-soluciones-medida:hover {
+.enlace-caso-soluciones-medida:hover {
   transform: translateY(-3px);
 }
 .resumen-portada-soluciones-medida {
@@ -1490,40 +1490,25 @@ body {
   color: var(--texto-soluciones);
   font-size: 1.18rem;
 }
-.formacion-ia-soluciones-medida {
-  border-top: 1px solid rgba(174, 207, 237, 0.1);
-}
-.formacion-ia-soluciones-medida > p:not(.etiqueta-soluciones-medida) {
-  max-width: 730px;
-  margin: 22px 0 0;
-  color: var(--texto-suave-soluciones);
-  font-size: 1.05rem;
-  line-height: 1.65;
-}
-.certificados-ia-soluciones-medida a {
-  border-color: rgba(174, 207, 237, 0.2);
-  color: var(--texto-soluciones);
-}
-.certificados-ia-soluciones-medida a:hover,
-.certificados-ia-soluciones-medida a:focus-visible {
-  border-color: var(--acento-soluciones);
-  color: var(--texto-soluciones);
-  background: rgba(55, 213, 180, 0.13);
-}
-.caso-bitacora-soluciones-medida {
+.caso-real-soluciones-medida {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
   gap: clamp(28px, 7vw, 90px);
   align-items: center;
   border-top: 1px solid rgba(174, 207, 237, 0.1);
 }
-.enlace-bitacora-soluciones-medida {
+.enlaces-caso-soluciones-medida {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.enlace-caso-soluciones-medida {
   margin-top: 27px;
   color: var(--acento-soluciones);
   font-size: 0.92rem;
   font-weight: 700;
 }
-.resultado-bitacora-soluciones-medida {
+.resultado-caso-soluciones-medida {
   display: grid;
   grid-template-columns: 130px 1fr;
   gap: 22px;
@@ -1533,21 +1518,21 @@ body {
   border-radius: 21px;
   background: linear-gradient(140deg, rgba(22, 69, 71, 0.55), var(--fondo-elevado-soluciones));
 }
-.resultado-bitacora-soluciones-medida img {
+.resultado-caso-soluciones-medida img {
   width: 130px;
   height: 130px;
   border-radius: 18px;
   background: #fff;
   object-fit: contain;
 }
-.resultado-bitacora-soluciones-medida span {
+.resultado-caso-soluciones-medida span {
   color: var(--acento-soluciones);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
-.resultado-bitacora-soluciones-medida p {
+.resultado-caso-soluciones-medida p {
   margin: 10px 0 0;
   color: var(--texto-soluciones);
   line-height: 1.55;
@@ -1557,7 +1542,7 @@ body {
 }
 .seccion-proceso-soluciones-medida ol {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
   margin: 44px 0 0;
   padding: 0;
@@ -1630,10 +1615,13 @@ body {
 .pie-soluciones-medida svg {
   color: var(--acento-soluciones);
 }
+@media (max-width: 1000px) {
+  .seccion-proceso-soluciones-medida ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 760px) {
   .pagina-soluciones-medida { padding: 0 16px; }
   .portada-soluciones-medida,
-  .caso-bitacora-soluciones-medida,
+  .caso-real-soluciones-medida,
   .contacto-soluciones-medida { grid-template-columns: 1fr; }
   .portada-soluciones-medida { min-height: auto; padding: 84px 0; }
   .grilla-problemas-soluciones-medida,
@@ -1644,8 +1632,8 @@ body {
   .acciones-contacto-soluciones-medida a { justify-content: center; }
 }
 @media (max-width: 480px) {
-  .resultado-bitacora-soluciones-medida { grid-template-columns: 1fr; }
-  .resultado-bitacora-soluciones-medida img { width: min(100%, 240px); height: auto; aspect-ratio: 1; }
+  .resultado-caso-soluciones-medida { grid-template-columns: 1fr; }
+  .resultado-caso-soluciones-medida img { width: min(100%, 240px); height: auto; aspect-ratio: 1; }
   .mantenimiento-soluciones-medida { grid-template-columns: 1fr; padding: 28px; }
 }
 

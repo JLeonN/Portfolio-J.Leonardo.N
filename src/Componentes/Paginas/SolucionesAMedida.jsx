@@ -1,48 +1,50 @@
 import {
-  FaAndroid,
   FaArrowRight,
-  FaDesktop,
+  FaCheckCircle,
+  FaDatabase,
   FaEnvelope,
-  FaFilePdf,
-  FaGlobe,
+  FaFacebookF,
+  FaInstagram,
   FaLightbulb,
   FaLinkedin,
-  FaMobileAlt,
+  FaSyncAlt,
   FaTools,
   FaWhatsapp,
   FaWrench,
 } from "react-icons/fa";
 
-const enlaceWhatsApp = "https://wa.me/59895747743?text=Hola%20Jorge%2C%20vi%20tu%20p%C3%A1gina%20de%20Soluciones%20a%20medida%20y%20me%20gustar%C3%ADa%20conversar%20sobre%20una%20necesidad%20de%20mi%20comercio.";
+const mensajeWhatsApp = "Hola Leo. Vi tu página y tengo una tarea o proceso en mi negocio que creo que se podría simplificar o automatizar. Te cuento cómo lo hacemos actualmente:";
+const enlaceWhatsApp = `https://wa.me/59895747743?text=${encodeURIComponent(mensajeWhatsApp)}`;
 
 const servicios = [
   {
-    titulo: "Apps Android",
-    descripcion: "Herramientas para usar en el local, depósito, reparto o visita a clientes, desde el celular.",
-    icono: FaAndroid,
+    titulo: "Automatización de tareas",
+    descripcion: "Reduzco pasos repetitivos como copiar datos, preparar documentos, actualizar registros, enviar información o publicar contenido. Cuando aporta valor, también puedo integrar inteligencia artificial.",
+    icono: FaSyncAlt,
   },
   {
-    titulo: "Herramientas de escritorio",
-    descripcion: "Sistemas claros para ordenar clientes, stock, presupuestos, reportes y tareas internas.",
-    icono: FaDesktop,
+    titulo: "Organización y conexión de información",
+    descripcion: "Ordeno información dispersa y conecto las herramientas que ya utilizás para evitar cargas duplicadas, búsquedas innecesarias y errores manuales.",
+    icono: FaDatabase,
   },
   {
-    titulo: "Páginas web",
-    descripcion: "Catálogos, reservas y presencia online como complemento de una solución más completa.",
-    icono: FaGlobe,
+    titulo: "Herramientas hechas a medida",
+    descripcion: "Si una automatización no alcanza, desarrollo una aplicación, sistema web, herramienta de escritorio o panel específico para el proceso que necesitás mejorar.",
+    icono: FaTools,
   },
 ];
 
 const problemas = [
-  "Pedidos, datos o controles anotados en papel.",
-  "Información repartida entre WhatsApp, planillas y memoria.",
-  "Tareas repetitivas que consumen tiempo todos los días.",
+  "Información repartida entre papel, planillas y distintas herramientas.",
+  "Datos que una persona debe copiar, revisar o preparar todos los días.",
+  "Procesos específicos que no encajan bien en una solución genérica.",
 ];
 
 const pasos = [
-  "Conversamos sobre cómo trabaja hoy tu negocio.",
-  "Definimos una primera solución simple y útil.",
-  "La desarrollamos, la probamos y la mejoramos con el uso.",
+  "Conversamos sobre cómo se realiza actualmente la tarea.",
+  "Identifico los pasos que generan demoras, errores o trabajo innecesario.",
+  "Propongo y construyo una primera solución simple y útil.",
+  "La probamos en el trabajo real y la mejoramos según los resultados.",
 ];
 
 function SolucionesAMedida() {
@@ -50,21 +52,21 @@ function SolucionesAMedida() {
     <main className="pagina-soluciones-medida">
       <section className="portada-soluciones-medida">
         <div>
-          <p className="etiqueta-soluciones-medida">Soluciones digitales para comercios</p>
+          <p className="etiqueta-soluciones-medida">Soluciones para procesos reales</p>
           <p className="presentacion-personal-soluciones-medida">
-            Soy Jorge Leonardo Núñez, desarrollador de aplicaciones y herramientas a medida.
+            Soy Leo, desarrollador de herramientas y automatizaciones a medida.
           </p>
-          <h1>Tu negocio trabaja todos los días. Tu tecnología también debería ayudar.</h1>
+          <h1>¿Hay tareas repetitivas que te hacen perder tiempo todos los días?</h1>
           <p className="texto-portada-soluciones-medida">
-            Creo aplicaciones Android y herramientas de escritorio a medida para
-            ordenar procesos, ahorrar tiempo y trabajar con información más clara.
+            Analizo cómo trabaja tu negocio y creo soluciones para reducir tareas
+            manuales, ordenar información y simplificar procesos.
           </p>
           <div className="acciones-soluciones-medida">
             <a className="boton-soluciones-principal" href={enlaceWhatsApp} target="_blank" rel="noopener noreferrer">
-              Hablemos por WhatsApp <FaWhatsapp />
+              Contame qué tarea te hace perder tiempo <FaWhatsapp />
             </a>
-            <a className="boton-soluciones-secundario" href="#casoBitacora">
-              Ver un caso real
+            <a className="boton-soluciones-secundario" href="#casosReales">
+              Ver casos reales
             </a>
           </div>
         </div>
@@ -79,8 +81,8 @@ function SolucionesAMedida() {
             <div className="mensaje-portada-soluciones-medida">
               <FaLightbulb aria-hidden="true" />
               <p>
-                No se trata de agregar tecnología porque sí. Se trata de crear una
-                herramienta que simplifique una necesidad real de tu comercio.
+                No se trata de agregar tecnología porque sí. Primero entiendo el
+                problema y después elijo la forma más práctica de resolverlo.
               </p>
             </div>
           </div>
@@ -89,7 +91,7 @@ function SolucionesAMedida() {
 
       <section className="seccion-soluciones-medida seccion-problemas-soluciones-medida">
         <p className="etiqueta-soluciones-medida">Punto de partida</p>
-        <h2>Una mejora empieza por detectar qué está frenando el trabajo.</h2>
+        <h2>Una mejora empieza por detectar dónde se pierde tiempo.</h2>
         <div className="grilla-problemas-soluciones-medida">
           {problemas.map((problema) => (
             <article key={problema}>
@@ -101,8 +103,8 @@ function SolucionesAMedida() {
       </section>
 
       <section className="seccion-soluciones-medida">
-        <p className="etiqueta-soluciones-medida">Qué puedo crear</p>
-        <h2>Herramientas a medida, según cómo trabaja tu negocio.</h2>
+        <p className="etiqueta-soluciones-medida">Cómo puedo ayudarte</p>
+        <h2>Primero está el problema. La tecnología viene después.</h2>
         <div className="grilla-servicios-soluciones-medida">
           {servicios.map(({ titulo, descripcion, icono: Icono }) => (
             <article key={titulo}>
@@ -114,54 +116,79 @@ function SolucionesAMedida() {
         </div>
       </section>
 
-      <section className="seccion-soluciones-medida formacion-ia-soluciones-medida">
-        <p className="etiqueta-soluciones-medida">Formación profesional</p>
-        <h2>Inteligencia artificial aplicada con aprendizaje continuo.</h2>
-        <p>
-          Me formo y actualizo en inteligencia artificial para identificar
-          oportunidades de automatización y crear herramientas prácticas que
-          ayuden a cada negocio a trabajar mejor.
-        </p>
-        <div className="certificados-ia-soluciones-medida">
-          <a href="/Documentos/CertificadoCursoIA.pdf" target="_blank" rel="noopener noreferrer">
-            <FaFilePdf /> Curso de IA
-          </a>
-          <a href="/Documentos/CertificadoDesarrolloIA.pdf" target="_blank" rel="noopener noreferrer">
-            <FaFilePdf /> Desarrollo con IA
-          </a>
-        </div>
-      </section>
-
-      <section id="casoBitacora" className="seccion-soluciones-medida caso-bitacora-soluciones-medida">
+      <section id="casosReales" className="seccion-soluciones-medida caso-real-soluciones-medida">
         <div className="contenido-caso-soluciones-medida">
-          <p className="etiqueta-soluciones-medida">Caso real</p>
-          <h2>Bitácora II: una app creada desde una necesidad concreta.</h2>
+          <p className="etiqueta-soluciones-medida">Caso real · Bitácora II</p>
+          <h2>Del papel a archivos listos para cargar.</h2>
           <p>
-            Bitácora II nació para modernizar el registro de pedidos y ubicaciones
-            en el trabajo diario. La app permite trabajar desde Android, reducir
-            pasos manuales y mejorar la información disponible para el equipo.
+            En el sector de repuestos de una empresa uruguaya, las ubicaciones de
+            más de 15.000 artículos se anotaban a mano. Después, otra persona debía
+            copiar hojas completas a Excel y un solo código incorrecto podía obligar
+            a revisar toda la carga.
+          </p>
+          <p>
+            Creé Bitácora II específicamente para ese trabajo: permite registrar y
+            consultar ubicaciones, preparar los archivos con la estructura necesaria
+            y generar etiquetas. Hoy la utilizan más de diez personas todos los días.
           </p>
           <a
-            className="enlace-bitacora-soluciones-medida"
+            className="enlace-caso-soluciones-medida"
             href="https://play.google.com/store/apps/details?id=bitacora.v2"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Conocer Bitácora II <FaArrowRight />
+            Ver Bitácora II en Google Play <FaArrowRight />
           </a>
         </div>
-        <div className="resultado-bitacora-soluciones-medida">
+        <div className="resultado-caso-soluciones-medida">
           <img src="/Imagenes/Bitácora-II.png" alt="Aplicación Bitácora II" />
           <div>
             <span>Resultado</span>
-            <p>Una herramienta móvil conectada al proceso real y mejorada a partir del uso diario.</p>
+            <p>Menos transcripción manual, archivos consistentes y consultas rápidas en una herramienta hecha para ese proceso.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="seccion-soluciones-medida caso-real-soluciones-medida">
+        <div className="contenido-caso-soluciones-medida">
+          <p className="etiqueta-soluciones-medida">Caso real · Precio Justo</p>
+          <h2>Una aplicación conectada con su web y sus redes.</h2>
+          <p>
+            Precio Justo necesitaba explicar claramente su propuesta y mantener
+            presencia en redes sin preparar y publicar manualmente cada contenido.
+            Desarrollé una landing y un flujo de automatización bajo demanda para
+            resolver el proceso completo.
+          </p>
+          <p>
+            Al ejecutarlo, el sistema prepara el texto y la imagen, publica en
+            Facebook, Instagram e Historias y envía a Discord un informe con el
+            resultado o los errores. No es necesario abrir ni operar las redes
+            manualmente.
+          </p>
+          <div className="enlaces-caso-soluciones-medida">
+            <a className="enlace-caso-soluciones-medida" href="https://jleonn.github.io/PrecioJustoWeb/#/" target="_blank" rel="noopener noreferrer">
+              Ver la web <FaArrowRight />
+            </a>
+            <a className="enlace-caso-soluciones-medida" href="https://www.facebook.com/profile.php?id=61590710220868" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF /> Facebook
+            </a>
+            <a className="enlace-caso-soluciones-medida" href="https://www.instagram.com/preciojustoapp/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram /> Instagram
+            </a>
+          </div>
+        </div>
+        <div className="resultado-caso-soluciones-medida">
+          <img src="/Imagenes/PrecioJusto-Icono.png" alt="Aplicación Precio Justo" />
+          <div>
+            <span>Resultado</span>
+            <p>Landing y publicaciones conectadas en un único flujo, probado y actualmente utilizado en producción.</p>
           </div>
         </div>
       </section>
 
       <section className="seccion-soluciones-medida seccion-proceso-soluciones-medida">
         <p className="etiqueta-soluciones-medida">Forma de trabajo</p>
-        <h2>Empezamos simple y mejoramos por etapas.</h2>
+        <h2>Entender, simplificar, construir y mejorar.</h2>
         <ol>
           {pasos.map((paso, indice) => (
             <li key={paso}>
@@ -178,27 +205,28 @@ function SolucionesAMedida() {
           <h2>La entrega no tiene por qué ser el final.</h2>
           <p>
             También puedo acompañar el mantenimiento: corregir problemas,
-            actualizar la herramienta y sumar mejoras cuando el negocio las necesite.
+            actualizar la herramienta y sumar mejoras cuando el uso real muestre
+            nuevas necesidades.
           </p>
         </div>
       </section>
 
       <section id="contactoSoluciones" className="contacto-soluciones-medida">
         <div>
-          <p className="etiqueta-soluciones-medida">Hablemos</p>
+          <p className="etiqueta-soluciones-medida">Hablemos del problema</p>
           <h2>¿Hay una tarea que hoy te hace perder tiempo?</h2>
-          <p>Contame cómo trabaja tu comercio y vemos juntos una forma práctica de mejorarlo.</p>
+          <p>Contame cómo la realizás actualmente y vemos si existe una forma práctica de simplificarla.</p>
         </div>
         <div className="acciones-contacto-soluciones-medida">
-          <a href={enlaceWhatsApp} target="_blank" rel="noopener noreferrer"><FaWhatsapp /> Hablemos por WhatsApp</a>
+          <a href={enlaceWhatsApp} target="_blank" rel="noopener noreferrer"><FaWhatsapp /> Contame por WhatsApp</a>
           <a href="mailto:jorgebike.75@gmail.com"><FaEnvelope /> Escribirme por correo</a>
           <a href="https://www.linkedin.com/in/j-l-n-técnico/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> Ver LinkedIn</a>
         </div>
       </section>
 
       <footer className="pie-soluciones-medida">
-        <FaMobileAlt aria-hidden="true" />
-        <span>Aplicaciones Android, escritorio y web a medida.</span>
+        <FaCheckCircle aria-hidden="true" />
+        <span>Problemas reales. Soluciones prácticas y hechas a medida.</span>
       </footer>
     </main>
   );
