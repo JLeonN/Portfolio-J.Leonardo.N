@@ -4,6 +4,7 @@ import {
   FaDatabase,
   FaEnvelope,
   FaFacebookF,
+  FaFilePdf,
   FaInstagram,
   FaLightbulb,
   FaLinkedin,
@@ -208,6 +209,26 @@ function SolucionesAMedida() {
             actualizar la herramienta y sumar mejoras cuando el uso real muestre
             nuevas necesidades.
           </p>
+        </div>
+      </section>
+
+      <section className="formacion-profesional-soluciones-medida">
+        <div>
+          <p className="etiqueta-soluciones-medida">Formación profesional</p>
+          <h2>Aprendizaje continuo aplicado a problemas reales.</h2>
+          <p>
+            Complemento mi experiencia práctica con formación en inteligencia
+            artificial y desarrollo de soluciones. Utilizo estas herramientas
+            solamente cuando aportan valor al proceso.
+          </p>
+        </div>
+        <div className="certificados-ia-soluciones-medida">
+          <a href="/Documentos/CertificadoCursoIA.pdf" target="_blank" rel="noopener noreferrer">
+            <FaFilePdf /> Ver certificado de IA
+          </a>
+          <a href="/Documentos/CertificadoDesarrolloIA.pdf" target="_blank" rel="noopener noreferrer">
+            <FaFilePdf /> Ver certificado de desarrollo con IA
+          </a>
         </div>
       </section>
 
