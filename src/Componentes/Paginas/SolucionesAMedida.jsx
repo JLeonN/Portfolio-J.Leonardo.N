@@ -14,11 +14,9 @@ import {
   FaWhatsapp,
   FaWrench,
 } from "react-icons/fa";
-import GaleriaProyecto from "../Otros/GaleriaProyecto";
 import {
   enlaceAplicacionCalculadoraPresupuestos,
   enlaceRepositorioCalculadoraPresupuestos,
-  imagenesCalculadoraPresupuestos,
 } from "../../Datos/CalculadoraPresupuestos";
 
 const mensajeWhatsApp = "Hola Leo. Vi tu página y tengo una tarea o proceso en mi negocio que creo que se podría simplificar o automatizar. Te cuento cómo lo hacemos actualmente:";
@@ -153,10 +151,13 @@ function SolucionesAMedida() {
             </a>
           </div>
         </div>
-        <GaleriaProyecto
-          imagenes={imagenesCalculadoraPresupuestos}
-          titulo="Calculadora de presupuestos"
-        />
+        <div className="resultado-caso-soluciones-medida">
+          <img src="/Imagenes/CalculadoraPresupuestosIcono.png" alt="Calculadora de presupuestos" />
+          <div>
+            <span>Resultado</span>
+            <p>Presupuestos más rápidos, organizados y con una presentación profesional lista para el cliente.</p>
+          </div>
+        </div>
       </section>
 
       <section className="seccion-soluciones-medida caso-real-soluciones-medida">

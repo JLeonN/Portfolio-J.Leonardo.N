@@ -5,7 +5,6 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { TbRocket, TbWorld } from "react-icons/tb";
-import GaleriaProyecto from "../Otros/GaleriaProyecto";
 
 const iconosAccion = {
   github: FaGithub,
@@ -24,13 +23,11 @@ function Proyectos({ proyecto }) {
     tecnologias,
     enlaces,
     destacado,
-    amplio,
-    imagenes,
   } = proyecto;
 
   return (
     <article
-      className={`tarjetaProyectoNueva ${destacado ? "destacada" : ""} ${amplio ? "proyectoAmplio" : ""}`}
+      className={`tarjetaProyectoNueva ${destacado ? "destacada" : ""}`}
     >
       <div className="cabeceraProyecto">
         <img src={imagen} alt={`Imagen del proyecto ${titulo}`} />
@@ -40,7 +37,6 @@ function Proyectos({ proyecto }) {
         </div>
       </div>
       <p>{descripcion}</p>
-      {imagenes && <GaleriaProyecto imagenes={imagenes} titulo={titulo} />}
       <div className="tecnologiasProyecto" aria-label={`Tecnologías de ${titulo}`}>
         {tecnologias.map((tecnologia) => (
           <span key={tecnologia}>{tecnologia}</span>

@@ -2,7 +2,6 @@ import Proyectos from "../../Paginas/Proyectos";
 import {
   enlaceAplicacionCalculadoraPresupuestos,
   enlaceRepositorioCalculadoraPresupuestos,
-  imagenesCalculadoraPresupuestos,
 } from "../../../Datos/CalculadoraPresupuestos";
 
 const proyectos = [
@@ -12,8 +11,6 @@ const proyectos = [
     descripcion: "Aplicación web responsive creada para un profesional independiente del sector eléctrico. Sustituye una planilla de Excel por un flujo que organiza clientes y materiales, calcula presupuestos y genera una presentación profesional.",
     tecnologias: ["Vue", "Quasar", "TypeScript", "Capacitor"],
     destacado: true,
-    amplio: true,
-    imagenes: imagenesCalculadoraPresupuestos,
     enlaces: [
       { tipo: "web", etiqueta: "Abrir aplicación", url: enlaceAplicacionCalculadoraPresupuestos },
       { tipo: "github", etiqueta: "Ver código", url: enlaceRepositorioCalculadoraPresupuestos },

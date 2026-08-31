@@ -10,11 +10,9 @@ import {
   FaTools,
   FaUserGraduate,
 } from "react-icons/fa";
-import GaleriaProyecto from "../Otros/GaleriaProyecto";
 import {
   enlaceAplicacionCalculadoraPresupuestos,
   enlaceRepositorioCalculadoraPresupuestos,
-  imagenesCalculadoraPresupuestos,
 } from "../../Datos/CalculadoraPresupuestos";
 
 function JorgeNunez() {
@@ -268,9 +266,10 @@ function JorgeNunez() {
             </a>
           </div>
         </div>
-        <GaleriaProyecto
-          imagenes={imagenesCalculadoraPresupuestos}
-          titulo="Calculadora de presupuestos"
+        <img
+          className="imagen-calculadora-jorge-nunez"
+          src="/Imagenes/CalculadoraPresupuestosIcono.png"
+          alt="Calculadora de presupuestos"
         />
       </section>
       <section className="bloque-jorge-nunez">
