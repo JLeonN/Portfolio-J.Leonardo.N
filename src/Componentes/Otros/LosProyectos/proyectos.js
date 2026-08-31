@@ -1,4 +1,12 @@
 const proyectos = [
+  /* Calculadora de presupuestos */
+  {
+    titulo: "Calculadora de presupuestos",
+    src: "/Imagenes/CalculadoraPresupuestosIcono.png",
+    tecnologias: ["Vue", "Quasar", "Capacitor", "TypeScript", "CSS3", "HTML5"],
+    gitHub: "https://github.com/JLeonN/CalculaTuPresupuesto",
+    enProduccion: "https://jleonn.github.io/CalculaTuPresupuesto/#/",
+  },
   /* Precio Justo */
   {
     titulo: "Precio Justo",

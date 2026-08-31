@@ -5,6 +5,7 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaFilePdf,
+  FaGithub,
   FaInstagram,
   FaLightbulb,
   FaLinkedin,
@@ -13,6 +14,12 @@ import {
   FaWhatsapp,
   FaWrench,
 } from "react-icons/fa";
+import GaleriaProyecto from "../Otros/GaleriaProyecto";
+import {
+  enlaceAplicacionCalculadoraPresupuestos,
+  enlaceRepositorioCalculadoraPresupuestos,
+  imagenesCalculadoraPresupuestos,
+} from "../../Datos/CalculadoraPresupuestos";
 
 const mensajeWhatsApp = "Hola Leo. Vi tu página y tengo una tarea o proceso en mi negocio que creo que se podría simplificar o automatizar. Te cuento cómo lo hacemos actualmente:";
 const enlaceWhatsApp = `https://wa.me/59895747743?text=${encodeURIComponent(mensajeWhatsApp)}`;
@@ -118,6 +125,41 @@ function SolucionesAMedida() {
       </section>
 
       <section id="casosReales" className="seccion-soluciones-medida caso-real-soluciones-medida">
+        <div className="contenido-caso-soluciones-medida">
+          <p className="etiqueta-soluciones-medida">Caso real · Calculadora de presupuestos</p>
+          <h2>De una planilla de Excel a presupuestos listos para presentar.</h2>
+          <p>
+            Un profesional independiente del sector eléctrico preparaba sus
+            presupuestos en Excel. Reutilizaba la misma planilla y necesitaba una
+            forma más rápida de responder, con un documento claro y profesional
+            para entregar a cada cliente.
+          </p>
+          <p>
+            Desarrollé una aplicación a medida que reúne clientes, lugares de
+            trabajo, materiales y precios. Permite usar datos guardados o escribir
+            conceptos para un potencial cliente, calcular materiales, mano de obra
+            y traslado, conservar cada presupuesto y generar su presentación final.
+          </p>
+          <p>
+            La solución ya fue entregada y actualmente se utiliza desde la web. La
+            versión Android está en preparación para llevar el mismo flujo al celular.
+          </p>
+          <div className="enlaces-caso-soluciones-medida">
+            <a className="enlace-caso-soluciones-medida" href={enlaceAplicacionCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
+              Abrir aplicación <FaArrowRight />
+            </a>
+            <a className="enlace-caso-soluciones-medida" href={enlaceRepositorioCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
+              <FaGithub /> Ver código
+            </a>
+          </div>
+        </div>
+        <GaleriaProyecto
+          imagenes={imagenesCalculadoraPresupuestos}
+          titulo="Calculadora de presupuestos"
+        />
+      </section>
+
+      <section className="seccion-soluciones-medida caso-real-soluciones-medida">
         <div className="contenido-caso-soluciones-medida">
           <p className="etiqueta-soluciones-medida">Caso real · Bitácora II</p>
           <h2>Del papel a archivos listos para cargar.</h2>

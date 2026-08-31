@@ -1,6 +1,7 @@
 import {
   FaExternalLinkAlt,
   FaFilePdf,
+  FaGithub,
   FaHandsHelping,
   FaLightbulb,
   FaNewspaper,
@@ -9,6 +10,12 @@ import {
   FaTools,
   FaUserGraduate,
 } from "react-icons/fa";
+import GaleriaProyecto from "../Otros/GaleriaProyecto";
+import {
+  enlaceAplicacionCalculadoraPresupuestos,
+  enlaceRepositorioCalculadoraPresupuestos,
+  imagenesCalculadoraPresupuestos,
+} from "../../Datos/CalculadoraPresupuestos";
 
 function JorgeNunez() {
   return (
@@ -227,6 +234,44 @@ function JorgeNunez() {
           </a>
           <p>https://play.google.com/store/apps/details?id=bitacora.v2</p>
         </div>
+      </section>
+      <section
+        id="casoCalculadoraPresupuestos"
+        className="bloque-destacado-jorge-nunez caso-calculadora-jorge-nunez"
+      >
+        <div>
+          <p className="etiqueta-jorge-nunez">Caso real para un cliente externo</p>
+          <h2>Calculadora de presupuestos</h2>
+          <p>
+            Un profesional independiente del sector eléctrico preparaba sus
+            presupuestos reutilizando una planilla de Excel. Necesitaba responder
+            con mayor facilidad y entregar una presentación más clara a sus clientes.
+          </p>
+          <p>
+            A partir de ese problema desarrollé una aplicación web que organiza
+            clientes, lugares de trabajo, materiales y precios; calcula mano de obra,
+            traslado y materiales; conserva cada presupuesto y prepara el documento
+            final. También admite potenciales clientes y conceptos escritos en el
+            momento, sin obligar a registrarlos previamente.
+          </p>
+          <p>
+            La herramienta está entregada y en uso desde la web. Este trabajo demuestra
+            mi capacidad para escuchar una necesidad externa, transformarla en un flujo
+            concreto y construir una solución que puede seguir creciendo por módulos.
+          </p>
+          <div className="enlaces-calculadora-jorge-nunez">
+            <a href={enlaceAplicacionCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
+              <FaExternalLinkAlt /> Abrir aplicación
+            </a>
+            <a href={enlaceRepositorioCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
+              <FaGithub /> Ver código
+            </a>
+          </div>
+        </div>
+        <GaleriaProyecto
+          imagenes={imagenesCalculadoraPresupuestos}
+          titulo="Calculadora de presupuestos"
+        />
       </section>
       <section className="bloque-jorge-nunez">
         <div className="encabezado-bloque-jorge-nunez">
