@@ -1,4 +1,4 @@
-import { FaEnvelope, FaFileDownload, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Contacto() {
   return (
@@ -16,6 +16,7 @@ function Contacto() {
         <div className="accionesContacto">
           <a href="mailto:jorgebike.75@gmail.com"><FaEnvelope /> Enviar correo</a>
           <a href="https://www.linkedin.com/in/j-l-n-técnico/" target="_blank" rel="noopener noreferrer"><FaLinkedin /> LinkedIn</a>
+          <a href="https://github.com/JLeonN" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a>
           <a href="/C.V/C.V.Programación.pdf" download="CV - Jorge Leonardo Núñez.pdf"><FaFileDownload /> Descargar CV</a>
         </div>
       </div>
