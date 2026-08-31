@@ -5,7 +5,6 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaFilePdf,
-  FaGithub,
   FaInstagram,
   FaLightbulb,
   FaLinkedin,
@@ -16,7 +15,6 @@ import {
 } from "react-icons/fa";
 import {
   enlaceAplicacionCalculadoraPresupuestos,
-  enlaceRepositorioCalculadoraPresupuestos,
 } from "../../Datos/CalculadoraPresupuestos";
 
 const mensajeWhatsApp = "Hola Leo. Vi tu página y tengo una tarea o proceso en mi negocio que creo que se podría simplificar o automatizar. Te cuento cómo lo hacemos actualmente:";
@@ -145,9 +143,6 @@ function SolucionesAMedida() {
           <div className="enlaces-caso-soluciones-medida">
             <a className="enlace-caso-soluciones-medida" href={enlaceAplicacionCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
               Abrir aplicación <FaArrowRight />
-            </a>
-            <a className="enlace-caso-soluciones-medida" href={enlaceRepositorioCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
-              <FaGithub /> Ver código
             </a>
           </div>
         </div>

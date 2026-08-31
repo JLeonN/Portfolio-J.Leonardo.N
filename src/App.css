@@ -1268,49 +1268,20 @@ body {
   grid-template-columns: minmax(0, 1fr) minmax(330px, 0.85fr);
   align-items: start;
 }
-.imagen-calculadora-jorge-nunez {
-  width: min(100%, 260px);
-  aspect-ratio: 1;
-  align-self: center;
-  justify-self: center;
-  border-radius: 18px;
-  object-fit: contain;
-}
-.enlaces-calculadora-jorge-nunez {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
-}
-.enlaces-calculadora-jorge-nunez a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 11px 14px;
-  border-radius: 8px;
-  color: var(--Texto);
-  background-color: #1f1f1f;
-  font-size: 0.95rem;
-  text-decoration: none;
-}
-.enlaces-calculadora-jorge-nunez a:hover,
-.enlaces-calculadora-jorge-nunez a:focus-visible {
-  color: var(--Hover);
+.acceso-calculadora-jorge-nunez .qr-calculadora-jorge-nunez {
+  display: none;
 }
 @media (max-width: 900px) {
   .caso-calculadora-jorge-nunez {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 600px) {
-  .enlaces-calculadora-jorge-nunez a {
-    width: 100%;
-    justify-content: center;
-  }
-}
 @media print {
-  .pagina-jorge-nunez .enlaces-calculadora-jorge-nunez {
+  .acceso-calculadora-jorge-nunez .icono-calculadora-jorge-nunez {
     display: none;
+  }
+  .acceso-calculadora-jorge-nunez .qr-calculadora-jorge-nunez {
+    display: block;
   }
 }
 

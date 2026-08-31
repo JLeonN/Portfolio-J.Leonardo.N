@@ -1,7 +1,6 @@
 import {
   FaExternalLinkAlt,
   FaFilePdf,
-  FaGithub,
   FaHandsHelping,
   FaLightbulb,
   FaNewspaper,
@@ -12,7 +11,6 @@ import {
 } from "react-icons/fa";
 import {
   enlaceAplicacionCalculadoraPresupuestos,
-  enlaceRepositorioCalculadoraPresupuestos,
 } from "../../Datos/CalculadoraPresupuestos";
 
 function JorgeNunez() {
@@ -257,20 +255,24 @@ function JorgeNunez() {
             mi capacidad para escuchar una necesidad externa, transformarla en un flujo
             concreto y construir una solución que puede seguir creciendo por módulos.
           </p>
-          <div className="enlaces-calculadora-jorge-nunez">
-            <a href={enlaceAplicacionCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
-              <FaExternalLinkAlt /> Abrir aplicación
-            </a>
-            <a href={enlaceRepositorioCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
-              <FaGithub /> Ver código
-            </a>
-          </div>
         </div>
-        <img
-          className="imagen-calculadora-jorge-nunez"
-          src="/Imagenes/CalculadoraPresupuestosIcono.png"
-          alt="Calculadora de presupuestos"
-        />
+        <div className="acceso-bitacora-jorge-nunez acceso-calculadora-jorge-nunez">
+          <img
+            className="icono-calculadora-jorge-nunez"
+            src="/Imagenes/CalculadoraPresupuestosIcono.png"
+            alt="Calculadora de presupuestos"
+          />
+          <img
+            className="qr-calculadora-jorge-nunez"
+            src="/Imagenes/QrCalculadoraPresupuestos.svg"
+            alt="QR para abrir la calculadora de presupuestos"
+          />
+          <a href={enlaceAplicacionCalculadoraPresupuestos} target="_blank" rel="noopener noreferrer">
+            <FaExternalLinkAlt />
+            Ir a la aplicación
+          </a>
+          <p>https://jleonn.github.io/CalculaTuPresupuesto/#/</p>
+        </div>
       </section>
       <section className="bloque-jorge-nunez">
         <div className="encabezado-bloque-jorge-nunez">
